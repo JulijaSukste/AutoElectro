@@ -85,7 +85,6 @@ searchBar.send_keys(ClientProductFind)
 
 searchBtn = driver.find_element(By.CLASS_NAME, "search--newSubmit--3BlVRKw")
 searchBtn.click()
-print("Search button clicked")
 time.sleep(5)
 
 scroll_pause_time = 1
@@ -99,7 +98,6 @@ while current_position < document_height:
     document_height = driver.execute_script("return document.body.scrollHeight;")
 
 product_cards1 = driver.find_elements(By.CSS_SELECTOR, ".jr_g.h5_ia.search-card-item")
-print("Product cards found:", len(product_cards1))
 
 for card in product_cards1:
     shop = "ALIEXPRESS"
