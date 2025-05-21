@@ -1,18 +1,17 @@
 # AutoElecto - Preču meklēšana un salīdzināšana
 
-AutoElecto ir Python aplikācija, kas ļauj lietotājam meklēt un salīdzināt preces no divām populārām tīmekļa vietnēm: **lemona.lv** un **aliexpress.com**. Pēc pieprasījuma lietotājam tiek rādīts saraksts ar preču nosaukumiem, cenām, veikalu nosaukumiem un saitēm, sakārtoti pēc cenas no augstākās uz zemāko. Aplikācija izmanto **Selenium** tīmekļa automatizācijai un ātru **Quick Sort** algoritmu, lai kārtotu atrastās preces.
+AutoElecto ir Python skripts, kas ļauj lietotājiem meklēt un salīdzināt preces no divām tīmekļa vietnēm: **lemona.lv** un **aliexpress.com**. Tas izmanto **Selenium** tīmekļa automatizācijai, lai iegūtu informāciju no šo vietņu pirmajām lapām un kārto atrastās preces pēc cenas, sākot no lielākās uz mazāko.
 
 ## Funkcionalitāte
 
 - Lietotājs ievada preces nosaukumu.
-- Sistēma meklē preces divās vietnēs: **lemona.lv** un **aliexpress.com**.
-- Pirmajā lapā tiek analizēti līdz 80 produktiem no katras vietnes.
-- Rezultāti tiek sakārtoti pēc cenas no augstākās uz zemāko, izmantojot **Quick Sort** algoritmu.
-- Lietotājs var izvēlēties, vai skatīt tikai vienu veikalu (lemona.lv vai aliexpress.com), vai abus.
+- Meklēšana tiek veikta abās vietnēs: **lemona.lv** un **aliexpress.com**.
+- Tiek analizēta pirmā lapa ar līdz 80 precēm katrā vietnē.
+- Rezultāti tiek sakārtoti pēc cenas no augstākās uz zemāko.
+- Lietotājam tiek piedāvāta iespēja izvēlēties, kuru veikalu izmantot (lemona.lv, aliexpress.com vai abus).
 
 ## Instalēšana
 
-1. Lejupielādējiet vai klonējiet šo repozitoriju:
+1. Klonējiet šo repozitoriju:
 
-   ```bash
-   git clone https://github.com/TavsGitHubVards/AutoElecto.gi
+   `
